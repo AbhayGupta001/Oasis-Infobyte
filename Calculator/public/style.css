@@ -1,0 +1,129 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-weight: normal; */
+}
+
+body,html{
+    height: 100vh;
+    width: 100vw;
+}
+
+.bg {
+    height: 100vh;
+    width: 100vw;
+    filter: blur(5px);
+    background-image: url('https://www.freevector.com/uploads/vector/preview/3666/FreeVector-Water-Drop-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+}
+
+.main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(70%) translateY(30%);
+    width: 42vw;
+}
+
+.main h1{
+    border: 3.5px solid white;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 15px;
+    border-bottom: 0;
+    padding: 0.7rem;
+    border-style: solid;
+    width: 100%;
+    color: rgba(255,255,255);
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.calculator {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    border: 8px solid white;
+    border-style: double;
+    border-radius: 30px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 3.5rem 3.5rem 1.5rem 3.5rem;
+}
+
+
+ .calculator div {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    max-width: 100%;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-size: 1.7em;
+    border: white solid 3px;
+    border-radius: 10px;
+}
+
+input {
+    min-width: 85%;
+    line-height: 3rem;
+    border: none;
+    appearance: none;
+    margin-right: 1em;
+    border-right: white solid 3px;
+    background-color: rgba(255, 255, 256,0.7);
+    padding-left: 1rem;
+    font-weight: 500;
+    font-size: 0.7em;
+}
+
+input:focus{
+    outline: none;
+}
+
+@media(max-width: 980px){
+    input{
+        min-width: 38%;
+    }
+
+    .main{
+        transform: translateX(50%) translateY(30%);
+        width: 50%;
+    }
+}
+
+@media(max-width: 520px){
+    input{
+        min-width: 35%;
+    }
+
+    .main{
+        transform: translateX(20%) translateY(30%);
+        width: 70%;
+    }
+}
+/* @media(max-width: 720px) and (height<=840px){
+    input{
+    }
+
+    .main{
+        transform: translateX(10%) translateY(30%);
+        width: 85vw;
+    }       
+}
+
+@media(max-width: 520px) and (max-height: 60px){
+    input{
+        min-width: 32%;
+    }
+
+    .main{
+        transform: translateX(10%) translateY(30%);
+        width: 75vw;
+    }       
+} */
